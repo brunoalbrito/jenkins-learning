@@ -4,17 +4,17 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                echo 'Building..'
+                echo 'Building executed'
             }
         }
         stage('Test') {
             steps {
-                echo 'Testing..'
+                echo 'Testing pass'
             }
         }
         stage('Deploy') {
             steps {
-                echo 'Deploying....'
+                echo 'Deploying, and post in artifactory'
             }
         }
     }
